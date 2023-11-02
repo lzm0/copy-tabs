@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Copy Tabs",
+  "version": "1.0",
+  "icons": {
+    "48": "images/icon-48.png"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "host_permissions": ["<all_urls>"],
+  "permissions": ["tabs", "clipboardRead", "clipboardWrite"]
+}
