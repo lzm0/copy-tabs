@@ -26,4 +26,6 @@ const tabs = await chrome.tabs.query({
 
 copyTextToClipboard(tabs.map((tab) => tab.url).join("\n"));
 appendHeading("Copied!");
-appendParagraph(`${tabs.length} tabs selected`);
+appendParagraph(
+  `${tabs.length} ${tabs.length === 1 ? "tab" : "tabs"} selected`
+);
