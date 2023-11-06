@@ -56,6 +56,7 @@ document.getElementById("paste").addEventListener("click", () =>
 
 const tabs = await chrome.tabs.query({
   highlighted: true,
+  currentWindow: true,
 });
 
 copyTextToClipboard(tabs.map((tab) => tab.url).join("\n"));
